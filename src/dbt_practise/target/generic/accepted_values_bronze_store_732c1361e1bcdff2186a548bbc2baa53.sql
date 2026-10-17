@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="store_name", model=get_where_subquery(ref('bronze_store')), values=["MegaMart Manhattan","MegaMart Brooklyn","MegaMart Austin","MegaMart San Jose","MegaMart Toronto"]) }}{{ config({"meta":{},"severity":"WARN","tags":[]}) }}
