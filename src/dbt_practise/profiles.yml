@@ -1,0 +1,35 @@
+dbt_practise:
+  outputs:
+    dev:
+      catalog: dbt
+      host: "......."
+      http_path: ".........."
+      schema: bronze
+      threads: 1
+      token: "..........."
+      type: databricks
+  target: dev
+jaffle_shop:
+  outputs:
+    dev:
+      auth_type: token
+      database: dbt_dev
+      host: "............."
+      http_path: ".........."
+      schema: dbt
+      threads: 16
+      token: dapida552f9c570fa67ef0761c81962c841edapida552f9c570fa67ef0761c81962c841ev
+      type: databricks
+  target: dev
+jaffle_shop_1:
+  outputs:
+    dev:
+      auth_type: token
+      database: dbt
+      host: dbc-9d228c3b-a78d.cloud.databricks.com
+      http_path: ".........."
+      schema: default
+      threads: 16
+      token: dapi921e40bfbc47a153dd7788b78d5ac71c
+      type: databricks
+  target: dev
